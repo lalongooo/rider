@@ -8,18 +8,19 @@ var UserSchema = new Schema({
     type: String,
     Required: 'Kindly enter the name of the user'
   },
-  email: {
+  description: {
     type: String,
-    Required: 'Kindly enter the email of the user'
+    Required: 'Kindly enter the description of the user'
   },
-  foo: {
+  fb: {
     type: String,
-    Required: 'Kindly enter the email of the user'
-  },
+    Required: 'Kindly enter the fb link of the user'
+  }
+    /*,
   created_date: {
     type: Date,
     default: Date.now
-  }
+  }*/
 });
 
 module.exports = mongoose.model('Users', UserSchema);
